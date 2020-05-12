@@ -8,3 +8,7 @@
 - killSwitch.sh --> This is ran after vpn.sh and resolv.sh. This will set firewall rules to kill all traffic not routed though the vpn. I used ufw to keep things more simple. If the VPN ever drops all connections will also be terminated. Therefore ensuring your browsing/torrenting remains unknown to your ISP.
 
 - nmapDiff --> Taken from "The Hacker Playbook 3" basic script running nmap daily using ndiff to compare results. # In the near future I will improve this script changing the ports and adding a few other items.
+
+- vlanScan.sh --> This will scan an IP range creating two lists of the hosts that are up. One is just IPs and the other includes hostnames with IPs.
+
+- fullScan.sh --> Does a full TCP port scan then take the open ports and proceeds to do a Service & Version scan. Eventually, i'll tie this in with the vlanScan.sh.
