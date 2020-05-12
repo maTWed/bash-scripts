@@ -14,7 +14,7 @@ mkdir -p /root/ips/
 touch /root/ips/$file-hosts
 nmap -sn -v --open $iprange | awk '/scan report/ {print $5,$6}' >> /root/ips/$file-hosts
 touch /root/ips/$file-ips
-cat /root/surge/ips/$file-hosts | cut -d'(' -f 2 | cut -d')' -f 1 >> /root/surge/ips/$file-ips
+cat /root/ips/$file-hosts | cut -d'(' -f 2 | cut -d')' -f 1 >> /root/ips/$file-ips
 
 echo -e "\n"
 echo -e "${RED}Created file with only ips in file ${GREEN}$file-ips${RED} and host names with ips in file ${GREEN}$file-hosts${NOCOLOR}"
