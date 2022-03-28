@@ -12,3 +12,5 @@
 - vlanScan.sh --> This will scan an IP range creating two lists of the hosts that are up. One is just IPs and the other includes hostnames with IPs.
 
 - fullScan.sh --> Does a full TCP port scan then take the open ports and proceeds to do a Service & Version scan. Eventually, i'll tie this in with the vlanScan.sh.
+
+- hashSubmit.sh --> quickly submit hashes to your VT account using your api key
